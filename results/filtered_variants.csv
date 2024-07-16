@@ -1,0 +1,179 @@
+SAMPnum,SAMP,POS,REF,ALT,AApos,REFcod,ALTcod,FREQ,GENE,GENEproduct,CAT,NAME
+2,3388_2_S12_R,2421901,NA,NA,NA,NA,NA,1,unknown,Phage tail length tape,small_indel,F.r.Y3650 yb
+2,3388_2_S12_R,2423384,I,I,135,ATA,ATT,1,unknown,phage protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2634815,D,E,105,GAC,GAA,1,unknown,hypothetical protein,snp_nonsynonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925106,R,R,14,CGA,CGG,1,unknown,Uncharacterized phage protein ,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925109,L,L,13,CTT,CTG,1,unknown,Uncharacterized phage protein ,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2423651,A,A,46,GCA,GCC,1,unknown,phage protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,1327332,K,K,43,AAA,AAG,1,unknown,Phage terminase,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,1327353,E,E,50,GAA,GAG,1,unknown,Phage terminase,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,1327431,L,L,76,CTG,CTC,1,unknown,Phage terminase,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,1675726,F,I,109,TTT,ATT,1,unknown,Mannitol operon activator,snp_nonsynonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2283631,NA,NA,NA,NA,NA,1,unknown,Thioredoxin reductase ,snp_intergenic,F.r.Y3650 yb
+2,3388_2_S12_R,2415759,E,E,28,GAG,GAA,1,unknown,hypothetical protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925196,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,F.r.Y3650 yb
+2,3388_2_S12_R,2925207,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,F.r.Y3650 yb
+2,3388_2_S12_R,2925291,A,A,375,GCT,GCC,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925300,F,F,372,TTC,TTT,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925336,A,A,360,GCG,GCT,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925339,T,T,359,ACA,ACC,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925121,V,V,9,GTG,GTC,1,unknown,Uncharacterized phage protein ,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925136,I,I,4,ATC,ATT,1,unknown,Uncharacterized phage protein ,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925143,G,A,2,GGT,GCT,1,unknown,Uncharacterized phage protein ,snp_nonsynonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925166,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,F.r.Y3650 yb
+2,3388_2_S12_R,2925175,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,F.r.Y3650 yb
+2,3388_2_S12_R,2925179,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,F.r.Y3650 yb
+2,3388_2_S12_R,2925181,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,F.r.Y3650 yb
+2,3388_2_S12_R,2925393,A,A,341,GCC,GCG,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927601,V,V,251,GTC,GTG,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927628,T,T,242,ACA,ACG,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927634,G,G,240,GGG,GGA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927640,E,E,238,GAA,GAG,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927643,Q,Q,237,CAG,CAA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927646,F,F,236,TTT,TTC,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927652,I,I,234,ATT,ATC,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927658,G,G,232,GGC,GGT,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927673,F,F,227,TTC,TTT,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2927691,V,V,221,GTG,GTA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925384,D,D,344,GAC,GAT,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925387,Y,Y,343,TAC,TAT,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925390,L,L,342,CTT,CTA,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925378,D,E,346,GAT,GAA,1,unknown,Phage major capsid protein,snp_nonsynonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925381,R,R,345,CGG,CGA,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925360,G,G,352,GGA,GGC,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+2,3388_2_S12_R,2925375,K,K,347,AAG,AAA,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 yb
+3,3388_3_S23_R,2423384,I,I,135,ATA,ATT,1,unknown,phage protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2423651,A,A,46,GCA,GCC,1,unknown,phage protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927601,V,V,251,GTC,GTG,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927628,T,T,242,ACA,ACG,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927634,G,G,240,GGG,GGA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927640,E,E,238,GAA,GAG,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2283631,NA,NA,NA,NA,NA,1,unknown,Thioredoxin reductase ,snp_intergenic,F.r.Y3650 x
+3,3388_3_S23_R,2415759,E,E,28,GAG,GAA,1,unknown,hypothetical protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2421901,NA,NA,NA,NA,NA,1,unknown,Phage tail length tape,small_indel,F.r.Y3650 x
+3,3388_3_S23_R,3628841,R,K,32,AGA,AAA,1,unknown,Fibronectin type III domain protein,snp_nonsynonymous,F.r.Y3650 x
+3,3388_3_S23_R,3628969,E,K,93,GAA,AAA,1,unknown,toxin,snp_nonsynonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927643,Q,Q,237,CAG,CAA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927646,F,F,236,TTT,TTC,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927652,I,I,234,ATT,ATC,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927658,G,G,232,GGC,GGT,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927673,F,F,227,TTC,TTT,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2927691,V,V,221,GTG,GTA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 x
+3,3388_3_S23_R,2956143,W,L,257,TGG,TTG,1,unknown,NAD kinase ,snp_nonsynonymous,F.r.Y3650 x
+4,3388_4_S29_R,1332255,A,A,360,GCG,GCT,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,1331643,T,T,156,ACG,ACA,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332231,G,G,352,GGA,GGC,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332252,T,T,359,ACA,ACC,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332425,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,F.r.Y3650 z
+4,3388_4_S29_R,1332448,G,A,2,GGT,GCT,1,unknown,Uncharacterized phage protein ,snp_nonsynonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332455,I,I,4,ATC,ATT,1,unknown,Uncharacterized phage protein ,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332470,V,V,9,GTG,GTC,1,unknown,Uncharacterized phage protein ,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332482,L,L,13,CTT,CTG,1,unknown,Uncharacterized phage protein ,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2283631,NA,NA,NA,NA,NA,1,unknown,Thioredoxin reductase ,snp_intergenic,F.r.Y3650 z
+4,3388_4_S29_R,2423384,I,I,135,ATA,ATT,1,unknown,phage protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2423651,A,A,46,GCA,GCC,1,unknown,phage protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2634815,D,E,105,GAC,GAA,1,unknown,hypothetical protein,snp_nonsynonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927628,T,T,242,ACA,ACG,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927634,G,G,240,GGG,GGA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927640,E,E,238,GAA,GAG,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927643,Q,Q,237,CAG,CAA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927646,F,F,236,TTT,TTC,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927652,I,I,234,ATT,ATC,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927658,G,G,232,GGC,GGT,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927673,F,F,227,TTC,TTT,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,2927691,V,V,221,GTG,GTA,1,unknown,Phage portal protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,3628841,R,K,32,AGA,AAA,1,unknown,Fibronectin type III domain protein,snp_nonsynonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332395,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,F.r.Y3650 z
+4,3388_4_S29_R,1332291,F,F,372,TTC,TTT,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332300,A,A,375,GCT,GCC,1,unknown,Phage major capsid protein,snp_synonymous,F.r.Y3650 z
+4,3388_4_S29_R,1332384,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,F.r.Y3650 z
+4,3388_4_S29_R,1332410,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,F.r.Y3650 z
+4,3388_4_S29_R,1332412,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,F.r.Y3650 z
+4,3388_4_S29_R,1332416,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,F.r.Y3650 z
+5,3388_5_S30_R,1366016,NA,NA,NA,NA,NA,1,unknown,Chaperone protein DnaJ,small_indel,Hal.r.Y3650 ab
+6,3388_6_S31_R,1366131,NA,NA,NA,NA,NA,1,unknown,Chaperone protein DnaJ,large_deletion,Hal.r.Y3650 Bb
+7,3388_7_S32_R,1740876,NA,NA,NA,NA,NA,1,unknown,Sulfatase family protein,snp_intergenic,Hal.r.Y3650 yb
+7,3388_7_S32_R,2789009,A,S,68,GCC,TCC,1,unknown,Transcriptional regulator,snp_nonsynonymous,Hal.r.Y3650 yb
+7,3388_7_S32_R,1366131,NA,NA,NA,NA,NA,1,unknown,Chaperone protein DnaJ,large_deletion,Hal.r.Y3650 yb
+8,3388_8_S33_R,38256,NA,NA,NA,NA,NA,1,unknown,Serine hydroxymethyltransferase ,small_indel,Heath.r.Y3650 a
+8,3388_8_S33_R,563593,NA,NA,NA,NA,NA,1,unknown,Foldase protein PrsA precursor ,small_indel,Heath.r.Y3650 a
+9,3388_9_S34_R,563593,NA,NA,NA,NA,NA,1,unknown,Foldase protein PrsA precursor ,small_indel,Heath.r.Y3650 B
+10,3388_10_S2_R,563593,NA,NA,NA,NA,NA,1,unknown,Foldase protein PrsA precursor ,small_indel,Heath.r.Y3650 y
+11,3388_11_S3_R,302778,NA,NA,NA,NA,NA,1,unknown,Predicted transcriptional regulator of N,snp_intergenic,Heath.r.Y3650 x
+12,3388_12_S4_R,302778,NA,NA,NA,NA,NA,1,unknown,Predicted transcriptional regulator of N,snp_intergenic,Heath.r.Y3650 z
+14,3388_14_S6_R,563409,NA,NA,NA,NA,NA,1,unknown,Foldase protein PrsA precursor ,small_indel,Scot.r.Y3650 y
+15,3388_15_S7_R,302778,NA,NA,NA,NA,NA,1,unknown,Predicted transcriptional regulator of N,snp_intergenic,Scot.r.Y3650 r
+16,3388_16_S8_R,302778,NA,NA,NA,NA,NA,1,unknown,Predicted transcriptional regulator of N,snp_intergenic,Scot.r.Y3650 t
+20,3388_20_S13_R,563524,NA,NA,NA,NA,NA,1,unknown,Foldase protein PrsA precursor ,large_deletion,Unity.r.Y3650 a b
+20,3388_20_S13_R,2131103,R,R,40,CGG,CGA,1,unknown,Spore cortex,snp_synonymous,Unity.r.Y3650 a b
+20,3388_20_S13_R,2187027,NA,NA,NA,NA,NA,1,unknown,Transcriptional regulator,small_indel,Unity.r.Y3650 a b
+22,3388_22_S15_R,563514,NA,NA,NA,NA,NA,1,unknown,Foldase protein PrsA precursor ,small_indel,Unity.r.Y3650 z
+23,3388_23_S16_R,302778,NA,NA,NA,NA,NA,1,unknown,Predicted transcriptional regulator of N,snp_intergenic,Unity.r.Y3650 l
+24,3388_24_S17_R,302778,NA,NA,NA,NA,NA,1,unknown,Predicted transcriptional regulator of N,snp_intergenic,Unity.r.Y3650 m
+25,3388_25_S18_R,302778,NA,NA,NA,NA,NA,1,unknown,Predicted transcriptional regulator of N,snp_intergenic,Unity.r.Y3650 o
+26,3388_26_S19_R,1327350,Y,Y,49,TAT,TAC,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1327362,N,N,53,AAT,AAC,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1327365,K,K,54,AAA,AAG,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1327401,S,S,66,TCA,TCT,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1327419,T,T,72,ACT,ACG,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1327422,V,V,73,GTT,GTA,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1327431,L,L,76,CTG,CTC,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1332231,G,G,352,GGA,GGC,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1332252,T,T,359,ACA,ACC,0.919387817,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1332255,A,A,360,GCG,GCT,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1332291,F,F,372,TTC,TTT,0.937685966,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1332300,A,A,375,GCT,GCC,0.937650204,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1332306,V,V,377,GTT,GTA,0.937496185,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1332307,K,Q,378,AAA,CAA,0.942832947,unknown,Phage major capsid protein,snp_nonsynonymous,V.r.Y3650 a a
+26,3388_26_S19_R,1332360,NA,NA,NA,NA,NA,0.929326392,unknown,Phage major capsid protein,small_indel,V.r.Y3650 a a
+26,3388_26_S19_R,1332361,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,V.r.Y3650 a a
+26,3388_26_S19_R,1332364,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,V.r.Y3650 a a
+27,3388_27_S20_R,1327422,V,V,73,GTT,GTA,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 x
+27,3388_27_S20_R,1332231,G,G,352,GGA,GGC,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 x
+27,3388_27_S20_R,1332252,T,T,359,ACA,ACC,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 x
+27,3388_27_S20_R,1332255,A,A,360,GCG,GCT,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 x
+27,3388_27_S20_R,1332291,F,F,372,TTC,TTT,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 x
+27,3388_27_S20_R,1332300,A,A,375,GCT,GCC,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 x
+27,3388_27_S20_R,1332360,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,small_indel,V.r.Y3650 x
+27,3388_27_S20_R,1332361,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,V.r.Y3650 x
+27,3388_27_S20_R,1332364,NA,NA,NA,NA,NA,1,unknown,Phage major capsid protein,snp_intergenic,V.r.Y3650 x
+27,3388_27_S20_R,1795843,NA,NA,NA,NA,NA,1,NA,NA,large_deletion,V.r.Y3650 x
+28,3388_28_S21_R,1327350,Y,Y,49,TAT,TAC,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,1327362,N,N,53,AAT,AAC,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,1327365,K,K,54,AAA,AAG,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,1327401,S,S,66,TCA,TCT,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,1327419,T,T,72,ACT,ACG,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,1327422,V,V,73,GTT,GTA,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,1327431,L,L,76,CTG,CTC,1,unknown,Phage terminase,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,1795843,NA,NA,NA,NA,NA,1,NA,NA,large_deletion,V.r.Y3650 y
+28,3388_28_S21_R,2423651,A,A,46,GCA,GCC,1,unknown,phage protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925109,L,L,13,CTT,CTG,1,unknown,Uncharacterized phage protein ,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925121,V,V,9,GTG,GTC,1,unknown,Uncharacterized phage protein ,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925136,I,I,4,ATC,ATT,1,unknown,Uncharacterized phage protein ,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925143,G,A,2,GGT,GCT,1,unknown,Uncharacterized phage protein ,snp_nonsynonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925166,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,V.r.Y3650 y
+28,3388_28_S21_R,2925175,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,V.r.Y3650 y
+28,3388_28_S21_R,2925179,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,V.r.Y3650 y
+28,3388_28_S21_R,2925181,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,V.r.Y3650 y
+28,3388_28_S21_R,2925196,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,V.r.Y3650 y
+28,3388_28_S21_R,2925207,NA,NA,NA,NA,NA,1,unknown,Uncharacterized phage protein ,snp_intergenic,V.r.Y3650 y
+28,3388_28_S21_R,2925291,A,A,375,GCT,GCC,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925300,F,F,372,TTC,TTT,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925336,A,A,360,GCG,GCT,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925339,T,T,359,ACA,ACC,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925360,G,G,352,GGA,GGC,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925375,K,K,347,AAG,AAA,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925378,D,E,346,GAT,GAA,1,unknown,Phage major capsid protein,snp_nonsynonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925381,R,R,345,CGG,CGA,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925384,D,D,344,GAC,GAT,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925387,Y,Y,343,TAC,TAT,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+28,3388_28_S21_R,2925390,L,L,342,CTT,CTA,1,unknown,Phage major capsid protein,snp_synonymous,V.r.Y3650 y
+29,3388_29_S22_R,1366131,NA,NA,NA,NA,NA,1,unknown,Chaperone protein DnaJ,large_deletion,Wa.r.Y3650 a
+31,3388_31_S25_R,563593,NA,NA,NA,NA,NA,1,unknown,Foldase protein PrsA precursor ,small_indel,Wa.r.Y3650 z
+32,3388_32_S26_R,1366131,NA,NA,NA,NA,NA,1,unknown,Chaperone protein DnaJ,large_deletion,XIII.r.Y3650 B a
+32,3388_32_S26_R,2956143,W,L,257,TGG,TTG,1,unknown,NAD kinase ,snp_nonsynonymous,XIII.r.Y3650 B a
+33,3388_33_S27_R,1366131,NA,NA,NA,NA,NA,1,unknown,Chaperone protein DnaJ,large_deletion,XIII.r.Y3650 B b
+33,3388_33_S27_R,2956143,W,L,257,TGG,TTG,1,unknown,NAD kinase ,snp_nonsynonymous,XIII.r.Y3650 B b
+34,3388_34_S28_R,1074729,N,D,63,AAT,GAT,1,unknown,hypothetical protein,snp_nonsynonymous,XIII.r.Y3650 z
+34,3388_34_S28_R,2533961,R,P,53,CGC,CCC,1,unknown,UPF0296 protein YlzA,snp_nonsynonymous,XIII.r.Y3650 z
+34,3388_34_S28_R,3286883,NA,NA,NA,NA,NA,1,unknown,integrase family protein,small_indel,XIII.r.Y3650 z

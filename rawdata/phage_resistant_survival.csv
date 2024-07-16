@@ -1,0 +1,15 @@
+treat,day,0,1,2,3
+Control,20Sep22,24,24,23,23
+P.larvae (100),20Sep22,12,8,2,0
+P.larvae (50),20Sep22,12,6,2,0
+RP.larvae (100),20Sep22,12,9,7,4
+RP.larvae (50),20Sep22,12,9,7,5
+P.larvaeAndPhage,11Aug22,48,45,41,36
+P.larvae (r2),11Aug22,48,34,17,0
+Control (r2),11Aug22,48,47,46,46
+RP.larvae (1000r2),08Oct22,16,8,4,0
+RP.larvae (100r2),08Oct22,16,12,6,1
+RP.larvae (10r2),08Oct22,16,13,11,2
+P.larvae (1000r2),08Oct22,16,7,2,0
+P.larvae (100r2),08Oct22,16,10,3,1
+P.larvae (10r2),08Oct22,16,12,6,2

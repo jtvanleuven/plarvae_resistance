@@ -1,0 +1,8 @@
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/rawdata/phage_seqs/phage_seqs/fern_F.fasta
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/rawdata/phage_seqs/phage_seqs/halcyone.fasta
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/rawdata/phage_seqs/phage_seqs/heath.fasta
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/rawdata/phage_seqs/phage_seqs/scottie.fasta
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/rawdata/phage_seqs/phage_seqs/unity.fasta
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/rawdata/phage_seqs/phage_seqs/vegas_V.fasta
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/rawdata/phage_seqs/phage_seqs/willow_WA.fasta
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/rawdata/phage_seqs/phage_seqs/xenia_XIII.fasta

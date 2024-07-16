@@ -1,0 +1,18 @@
+
+(base) jvanleuven@CALS-D621636 ref_seq % pwd
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/ref_seq
+blastn -db Plarvae_3650.fasta -query ../../RProj_resistance/rawdata/phage_seqs/xenia_XIII.gb -evalue 1E-5
+blastn -db Plarvae_3650.fasta -query ../../RProj_resistance/rawdata/phage_seqs/willow_WA.gb -evalue 1E-5
+
+
+
+
+/Users/jvanleuven/MyDrive/projects/bees/Resistant_host_project_emma/RProj_resistance/ref_seq/clinker
+clinker *.gb -p
+
+
+breseq -r ../00_refs/plarvae_3650_tracy.gb -r ../00_refs/fern_F.gb ../01_trimmed/3388_2_S12_R1.trim.fastq.gz ../01_trimmed/3388_2_S12_R2.trim.fastq.gz -j 4 -p
+
+breseq -r ../../00_refs/plarvae_3650_tracy.gb -r ../../00_refs/fern_F.gb ../../01_trimmed/3388_4_S29_R1.trim.fastq.gz ../../01_trimmed/3388_4_S29_R2.trim.fastq.gz -j 4 -p
+
+breseq -r ../../00_refs/plarvae_3650_tracy.gb -r ../../00_refs/vegas_V.gb ../../01_trimmed/3388_28_S21_R1.trim.fastq.gz ../../01_trimmed/3388_28_S21_R2.trim.fastq.gz -j 4 -p
