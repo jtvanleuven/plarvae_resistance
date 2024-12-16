@@ -26,7 +26,7 @@ ex_dat_mrg <- mutate(group_by(grow_all, isolate, rep),
 
 
 # Now let's plot the derivative
-ggplot(data = dplyr::filter(ex_dat_mrg, isolate=="Scot_a"),
+ggplot(data = dplyr::filter(ex_dat_mrg, isolate=="Scot_B"),
        aes(x = Time, y = deriv)) +
   geom_line() +
   facet_wrap(~rep, scales = "free")
@@ -44,7 +44,7 @@ ex_dat_mrg <- mutate(group_by(grow_all, isolate, rep),
                                                 window_width_n = 5, trans_y = "log"),
                      doub_time = doubling_time(y = deriv_percap5))
 
-ggplot(data = dplyr::filter(ex_dat_mrg, isolate=="Scot_a"),
+ggplot(data = dplyr::filter(ex_dat_mrg, isolate=="Scot_B"),
        aes(x = Time, y = deriv_percap5)) +
   geom_line() +
   facet_wrap(~rep, scales = "free")
@@ -309,11 +309,29 @@ titers_cross <- read_excel("rawdata/Picked plaques Titers Comparison.xlsx", shee
 get <- str_split(titers_cross$host, " ", simplify = T)[,1] == titers_cross$phage
 titers_cross_short <- titers_cross %>%
   filter(!get)   #have pseudocount of 1 in there
-hist(titers_cross_short$diffFromAnc, breaks=15)
+lookup <- titers_cross %>%
+  filter(get)   #have pseudocount of 1 in there
+row.names(lookup) <- lookup$host
+hist(-1 * titers_cross_short$diffFromAnc, breaks=20) #a change in the positive direction
+#indicates that the phage plates better on the resistant host than the phage
+#used to challenge that host.
 shapiro.test(titers_cross_short$diffFromAnc)
 skewness(titers_cross$diffFromAnc)
+#try t-test
+titers_cross_short$compEOP <- NA
+for(i in 1:nrow(titers_cross_short)){
+  titers_cross_short[i,]$compEOP <- lookup[titers_cross_short[i,]$host,]$logEOP
+}
 
-
+  
+t.test(x=titers_cross_short$relativeEOP, y = titers_cross_short$compEOP, paired = T, p.adjust="BH")
+t.test(x=titers_cross_short$logEOP, y = titers_cross_short$compEOP, paired = T, p.adjust="BH")
+p.adjust(7.617E-5, method="BH", n = 40)
+hist(titers_cross_short$relativeEOP, breaks = 20)  #definate not normally distributed
+hist(titers_cross_short$logEOP, breaks = 20)   #looks normal
+#going to report the paired t-test with BH correction. I think that this is the most
+#appropriate statistical test, however, it does change the result
+#from not significant (Shapiro) to significant (t-test)
 
 #survival data from July 15
 #survival data from July 15
