@@ -6,7 +6,9 @@ library(lme4)
 library(moments)   #for calculating skewness
 library(survival)
 library(survminer)
+library(seqinr)
 source('R_functions.R')
+library(rentrez)
 
 ##compare growth rates of different isolates
 ####resistant strain growth data
@@ -141,6 +143,7 @@ names(pvals) <- c("isolate",
 ##data frame to save predictor variable significance
 
 p <- 0.05 ###change pvalue here
+#p <- 1 ###change pvalue here
 #max density
 #anova to see if phage and isolate are important
 res_aov <- aov(max_dens ~ phage+isolate, data=mod_dat)
@@ -189,7 +192,7 @@ pvals$coeff_doub[sig] <- coeffs$Estimate[sig]
 pvals$pval_doub[sig] <- coeffs$Pr...t..[sig]
 
 pvals$isolate <- str_remove(pvals$isolate, "isolate")
-
+write.csv(pvals, file="results/growth_data_full_table.csv", quote = F, row.names = F)
 
 #want to compare to model with gene identity
 #need to import more data
@@ -243,8 +246,10 @@ mod_dat[is.na(mod_dat)] <- 0
 {
 phage_lm <- lm(max_dens ~ phage, data=mod_dat)
 summary(phage_lm)
+anova(phage_lm)
 isolate_lm <- lm(max_dens ~ isolate, data=mod_dat)
 summary(isolate_lm)
+anova(isolate_lm)
 genes_lm <- lm(max_dens ~ inter+prsa+dnaj+trans+pin, data=mod_dat)
 summary(genes_lm)
 
@@ -302,7 +307,9 @@ mean(na.omit(titers[titers$evolvedPlaque=="y",]$eop))
 sd(titers[titers$evolvedPlaque=="y",]$eop, na.rm = T)
 min(na.omit(titers[titers$evolvedPlaque=="y",]$eop))
 
-
+titer_summaries <- eop.l %>%
+  group_by(evolvedPlaque, name) %>%
+  summarize(n=n(), meanlog=mean(log(titer, base=10)), sdlog=sd(log(titer, base = 10)))
 
 titers_cross <- read_excel("rawdata/Picked plaques Titers Comparison.xlsx", sheet = 4) ##must copy to working excel file to Project directory.
 #drop challenged hosts
@@ -323,15 +330,28 @@ for(i in 1:nrow(titers_cross_short)){
   titers_cross_short[i,]$compEOP <- lookup[titers_cross_short[i,]$host,]$logEOP
 }
 
-  
-t.test(x=titers_cross_short$relativeEOP, y = titers_cross_short$compEOP, paired = T, p.adjust="BH")
-t.test(x=titers_cross_short$logEOP, y = titers_cross_short$compEOP, paired = T, p.adjust="BH")
-p.adjust(7.617E-5, method="BH", n = 40)
-hist(titers_cross_short$relativeEOP, breaks = 20)  #definate not normally distributed
+test <- t.test(x=titers_cross_short$logEOP, y = titers_cross_short$compEOP, 
+               paired = T, alternative = "greater")
+test
+p.adjust(test$p.value, method="BH", n = 40)  #is is a very conservative "n". The number of multiple comparisons is closer to 3, but it varies depending on the comparison
+hist(titers_cross_short$relativeEOP, breaks = 20)  #definitely not normally distributed
 hist(titers_cross_short$logEOP, breaks = 20)   #looks normal
 #going to report the paired t-test with BH correction. I think that this is the most
 #appropriate statistical test, however, it does change the result
 #from not significant (Shapiro) to significant (t-test)
+
+#do stats on survivor phages
+survivors <- titers %>%
+  filter(evolvedPlaque=="y") %>%
+  mutate(log3650=log10(titer3650), logresist=log10(resistantHost), d=log3650-logresist) %>%
+  drop_na()
+hist(survivors$d, breaks=15)  #transformed data looks pretty normal
+shapiro.test(survivors$d)     #shaprio says its normal
+t.test(x=survivors$log3650, y = survivors$logresist,
+       paired = T,
+       alternative = "less")
+
+
 
 #survival data from July 15
 #survival data from July 15
@@ -352,7 +372,7 @@ big.tab <- surv.long %>%
   mutate(dead=max-count, alive=count) %>%
   select(-count,-freq) %>%
   gather(status, count, c(alive,dead)) %>%
-  slice(rep(1:n(), count)) %>%
+  dplyr::slice(rep(1:n(), count)) %>%
   transform(surv=ifelse(status=="alive", 0, 1), status=NULL) %>%
   select(-count) %>%
   arrange(treat, dose, day, surv) %>%
@@ -401,3 +421,78 @@ bamTab <- bamTab2 %>%
 bamTab[1,2] <- "anc"
 
 write.csv(bamTab, file="results/allPhageW3650_coverages.csv", quote = F, col.names = T, row.names = F)
+
+
+####process gene data for splitstree
+phams <- list.files("ref_seq/seqs_for_victor/Fernvirus/phamerate__02_Apr_2025/pham_fastas/", full.names = T)
+phams <- phams[str_detect(phams, "faa")]
+phamTab <- data.frame(matrix(nrow=length(phams), ncol=3))
+phamTab <- data.frame(pham=str_split(phams, "\\//", simplify = T)[,2],
+                      ntax="",
+                      protein="",
+                      file=phams)
+###need to know how many taxa in dataset
+taxNames <- ""
+for(i in 1:nrow(phamTab)){
+  seqs <- read.fasta(phamTab$file[i])
+  phamTab$ntax[i] <- length(seqs)
+  func <- vector(mode="character", length=length(seqs))
+  for(j in 1:length(seqs)){
+    func[j] <- str_replace(str_extract(attr(seqs[[j]],"Annot"), "protein=[\\w\\s]+"), "protein=", "")
+  }
+  func.tab <- data.frame(table(func))
+  mode_func <- as.character(func.tab[which(func.tab$Freq == max(func.tab$Freq)),]$func)
+  phamTab$protein[i] <- mode_func
+  taxNames <- c(taxNames, getName(seqs))
+}
+taxNames <- taxNames[-1]
+phamTab$ntax <- as.numeric(phamTab$ntax)
+hist(phamTab$ntax)
+#sampTax <- phamTab %>%
+#  filter(ntax==max(phamTab$ntax)) %>%
+#  sample_n(size = 1) %>%
+#  select(file)
+#taxNames <- getName(read.fasta(as.character(sampTax)))
+taxNames <- str_split(taxNames, "\\|", simplify = T)[,2]
+for(i in 1:length(taxNames)){
+  if(str_detect(taxNames[i], "prot")){
+    taxNames[i] <- str_split(taxNames[i], "_prot", simplify = T)[,1]
+  }else{
+    taxNames[i] <- paste(str_split(taxNames[i], "IDv1", simplify = T)[,1], "IDv1", sep="")
+  }
+}
+taxNames <- unique(taxNames)
+phamTab2 <- cbind(phamTab,
+                  data.frame(matrix(nrow=nrow(phamTab), ncol=length(taxNames))))
+names(phamTab2) <- c("pham", "ntax", "protein","file", taxNames)
+
+##now go build a matrix of what phams are present in what phages
+for(i in 1:nrow(phamTab2)){
+  seqs <- read.fasta(phamTab2$file[i])
+  match <- str_detect(paste(getName(seqs), collapse=""), names(phamTab2))   ##search for genome names in phams
+  phamTab2[i,5:length(names(phamTab2))] <- as.integer(match[-1:-4])
+}
+
+#plot
+phamtab2_long <- phamTab2 %>%
+  pivot_longer(cols= -c(pham, ntax, protein, file), names_to = "accession", values_to = "phamFound")
+ggplot(phamtab2_long, aes(x=pham, y=accession, fill=phamFound, color=phamFound)) +
+  geom_tile()
+
+#format for splitstree
+splitout <- phamTab2 %>%
+  select(-ntax, -file) %>%
+  mutate(pham=str_remove_all(pham, "\\.faa")) %>%
+  t %>%
+  data.frame()
+names(splitout) <- splitout[1,]
+splitout <- splitout[-1,]
+
+splitout2 <- splitout %>%
+  unite("chars", 1:ncol(splitout), sep = "") %>%
+  mutate(taxa = row.names(splitout)) %>%
+  select(taxa, chars) %>%
+  rename(taxa=as.character(length(taxNames)), chars=as.character(length(phams)))
+  
+write.table(splitout2, file="ref_seq/seqs_for_victor/splitstree_phams.phy", quote = F, row.names = F, sep = " ")
+write.table(phamTab2, file="results/pham_table.csv", quote=F, row.names = F, sep=",")
