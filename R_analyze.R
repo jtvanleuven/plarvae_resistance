@@ -324,7 +324,7 @@ hist(-1 * titers_cross_short$diffFromAnc, breaks=20) #a change in the positive d
 #used to challenge that host.
 shapiro.test(titers_cross_short$diffFromAnc)
 skewness(titers_cross$diffFromAnc)
-#try t-test
+#try t-test -- NOTE: this code and statistical test are being replaced by a linear model as suggested by Review 2
 titers_cross_short$compEOP <- NA
 for(i in 1:nrow(titers_cross_short)){
   titers_cross_short[i,]$compEOP <- lookup[titers_cross_short[i,]$host,]$logEOP
@@ -339,6 +339,32 @@ hist(titers_cross_short$logEOP, breaks = 20)   #looks normal
 #going to report the paired t-test with BH correction. I think that this is the most
 #appropriate statistical test, however, it does change the result
 #from not significant (Shapiro) to significant (t-test)
+
+#new code to address help from Reviewer 2
+titers_cross_short$id <- interaction(titers_cross_short$host, titers_cross_short$compEOP)
+#creates an identifier to link between clones. After creating this code realise the ‘host’ column
+#perhaps achieves this but this initial step allowed me to check the duplicate removal worked as
+#it should.
+
+d1 <- titers_cross_short[,c(-9)] #removes the other EOP values
+d1$type <- 'lEOP' #defines that this is the EOP against the non-challenge phage
+d1 <- d1[,c(1,4,7,9,10)] #retained columns should be host, phage, logEOP, id, and type
+names(d1)[3] <- 'EOP' #creates a common column name for EOP
+d2 <- titers_cross_short[,c(-7)] #removes the other EOP values
+d2$type <- 'cEOP' #defines that this is the EOP against the original challenge phage
+d12 <- group_by(d2, host, id, type) %>%
+  summarise(EOP = mean(compEOP)) #removes duplicate entries of resistance to phage isolate was originally challenged with
+d12$phage <- d12$host #resistance to what phage indicated in the original host name
+da <- merge(d1, d12, all = T) #merges both data-frames
+m1 <- lmer(EOP ~ type + (1|id), data = da) #analyses EOP against whether EOP is to the original host or to different phage. Hosts are linked by the random effect.
+m2 <- lmer(EOP ~ 1 + (1|id), data = da) #null model
+anova(m1,m2) #model comparison defines whether or not effect of type affects the fitting of the model. It does, so there is a difference in EOPs
+emmeans::emmeans(m1, pairwise ~ type) #Tukey comparisons showing difference in type of EOP
+ggplot(da, aes(x = type, y = exp(EOP))) +
+  geom_point() 
+
+
+
 
 #do stats on survivor phages
 survivors <- titers %>%
